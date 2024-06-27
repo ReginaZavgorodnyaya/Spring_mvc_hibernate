@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h2>All users</h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .container a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .container a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>CRUD App</h1>
+    <a href="/create-user">Create user</a>
+    <a href="/read-users">Read users</a>
+    <a href="/update-user">Update user</a>
+    <a href="/delete-user">Delete user</a>
+</div>
+
+<!--<div>-->
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <th>Id</th>-->
+<!--            <th>Name</th>-->
+<!--            <th>Age</th>-->
+<!--            <th>Email</th>-->
+<!--        </tr>-->
+
+<!--        <tr th:each="user : ${users}">-->
+<!--            <td th:text="${user.getId()}">Id</td>-->
+<!--            <td th:text="${user.getName()}">Name</td>-->
+<!--            <td th:text="${user.getAge()}">Age</td>-->
+<!--            <td th:text="${user.getEmail()}">Email</td>-->
+
+<!--            <td>-->
+<!--                <form th:action="@{allUsers/edit/{id}(id=${user.id})}" th:object="${user}">-->
+<!--                    <button type="submit">Изменить</button>-->
+<!--                </form>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <form th:action="@{allUsers/delete(id=${user.id})}" th:object="${user}">-->
+<!--                    <input type="hidden" name="id" th:value="${user.id}">-->
+<!--                    <button type="submit">Удалить</button>-->
+<!--                </form>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--    <form th:action="@{allUsers/add}">-->
+<!--        <button type="submit">Добавить нового пользователя</button>-->
+<!--    </form>-->
+<!--</div>-->
+
+</body>
+</html>
